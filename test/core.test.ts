@@ -1,0 +1,1 @@
+import {expect,it} from 'vitest';import {ArchiveIndex} from '../src/index.js';it('indexes entries',()=>{const x=new ArchiveIndex();x.add({path:'a',size:1,type:'file'});expect(x.find('a')?.size).toBe(1)});
